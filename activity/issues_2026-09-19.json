@@ -4,5 +4,11 @@
     "title": "fix: Handle network timeout exception gracefully (14:46:31)",
     "timestamp": "2026-09-19T14:46:31",
     "status": "CLOSED"
+  },
+  {
+    "issueNumber": 3,
+    "title": "docs: Update API and workflow automation documentation (14:57:29)",
+    "timestamp": "2026-09-19T14:57:29",
+    "status": "CLOSED"
   }
 ]
