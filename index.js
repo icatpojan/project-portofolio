@@ -95,9 +95,11 @@ function autoCommit() {
 
         console.log(`[${timestamp}] Updated/Created: ${fileName}`);
 
-        execSync("git add .", { cwd: __dirname });
-        execSync(`git commit -m "${commitMsg}"`, { cwd: __dirname });
-        execSync("git push origin main", { cwd: __dirname });
+        const execOptions = { cwd: __dirname, windowsHide: true };
+
+        execSync("git add .", execOptions);
+        execSync(`git commit -m "${commitMsg}"`, execOptions);
+        execSync("git push origin main", execOptions);
 
         console.log(`[${timestamp}] Push berhasil: "${commitMsg}"\n`);
     } catch (error) {
