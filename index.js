@@ -260,6 +260,40 @@ async function autoActivity() {
     }
 }
 
-// Jalankan saat pertama kali & set interval
-autoActivity();
-setInterval(autoActivity, INTERVAL);
+async function runInitialAllActivities() {
+    console.log(`\n🚀 [INITIAL STARTUP] Executing ALL 4 activities sequentially...`);
+    
+    // 1. Direct Commit
+    try {
+        console.log(`\n--- Step 1/4: Direct Commit ---`);
+        await handleDirectCommit(getFormattedTimestamp());
+    } catch (err) { console.error("Error in Direct Commit:", err.message); }
+    
+    // 2. Issue Activity
+    try {
+        console.log(`\n--- Step 2/4: Issue Activity ---`);
+        await handleIssueActivity(getFormattedTimestamp());
+    } catch (err) { console.error("Error in Issue Activity:", err.message); }
+
+    // 3. Pull Request Activity
+    try {
+        console.log(`\n--- Step 3/4: Pull Request Activity ---`);
+        await handlePullRequestActivity(getFormattedTimestamp());
+    } catch (err) { console.error("Error in PR Activity:", err.message); }
+
+    // 4. Code Review & Merge Activity
+    try {
+        console.log(`\n--- Step 4/4: Code Review & Merge Activity ---`);
+        await handleCodeReviewActivity(getFormattedTimestamp());
+    } catch (err) { console.error("Error in Code Review Activity:", err.message); }
+
+    console.log(`\n✅ [INITIAL STARTUP COMPLETED] All 4 activities finished!`);
+    console.log(`⏰ Scheduled periodic random activity every ${INTERVAL / 1000 / 60} minutes.\n`);
+}
+
+async function startBot() {
+    await runInitialAllActivities();
+    setInterval(autoActivity, INTERVAL);
+}
+
+startBot();
