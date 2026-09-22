@@ -28,5 +28,11 @@
     "title": "fix: Handle network timeout exception gracefully (18:16:45)",
     "timestamp": "2026-09-22T18:16:45",
     "status": "CLOSED"
+  },
+  {
+    "issueNumber": 41,
+    "title": "docs: Update API and workflow automation documentation (21:16:46)",
+    "timestamp": "2026-09-22T21:16:46",
+    "status": "CLOSED"
   }
 ]
