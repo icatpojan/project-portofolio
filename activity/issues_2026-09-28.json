@@ -4,5 +4,11 @@
     "title": "refactor: Optimize memory usage in activity logger (11:35:49)",
     "timestamp": "2026-09-28T11:35:49",
     "status": "CLOSED"
+  },
+  {
+    "issueNumber": 82,
+    "title": "docs: Update API and workflow automation documentation (15:36:35)",
+    "timestamp": "2026-09-28T15:36:35",
+    "status": "CLOSED"
   }
 ]
