@@ -1,0 +1,8 @@
+[
+  {
+    "issueNumber": 137,
+    "title": "fix: Handle network timeout exception gracefully (21:17:17)",
+    "timestamp": "2026-10-04T21:17:17",
+    "status": "CLOSED"
+  }
+]
