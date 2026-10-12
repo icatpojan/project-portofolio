@@ -58,5 +58,11 @@
     "title": "refactor: Optimize memory usage in activity logger (15:55:11)",
     "timestamp": "2026-10-12T15:55:11",
     "status": "CLOSED"
+  },
+  {
+    "issueNumber": 232,
+    "title": "docs: Update API and workflow automation documentation (17:25:11)",
+    "timestamp": "2026-10-12T17:25:11",
+    "status": "CLOSED"
   }
 ]
